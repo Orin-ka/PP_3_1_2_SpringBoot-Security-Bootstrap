@@ -46,7 +46,7 @@ public class UserServiceImp implements UserService {
         void init() {
         Set<Role> roles = new HashSet<>();
         roles.add(new Role(EnumRole.ROLE_USER));
-        User startUser1 = new User("Olga", "Mironova2", "seller", "admin", "admin");
+        User startUser1 = new User("Olga1", "Mironova2", "seller", "admin", "admin");
         User startUser2 = new User("Mark", "Tarkovsky2", "realtor", "user", "user");
         Role role1 = roleRepository.saveAndFlush(new Role(EnumRole.ROLE_ADMIN));
         Role role2 = roleRepository.saveAndFlush(new Role(EnumRole.ROLE_USER));
